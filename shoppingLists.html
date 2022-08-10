@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Lists</title>
+    <script src="https://kit.fontawesome.com/8cd7772a80.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .form-control{
+            max-width: 500px;
+        }
+        .productContainer{
+            margin-top: 25px;
+        }
+        .productName{
+            cursor: pointer;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            user-select: none;
+            display: inline;
+        }
+        .purchased{
+            text-decoration: line-through;
+        }
+        .fa-trash-can{
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="form-control" placeholder="Enter product name">
+        <div class="shoppingListContainer">
+        </div>
+    </div>
+    
+    <script src="shoppingLists.js"></script>
+</body>
+</html>
